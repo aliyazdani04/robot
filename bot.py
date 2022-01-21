@@ -5,52 +5,8 @@ from rubika.tools import Tools
 from rubika.encryption import encryption
 import time
 
-print("""# botcreated#
-                           .7KBQBBBBBBBBBIr
-                        i5RQQP1ri..   ..i7IbQQM2i
-                    rQBBDY.                   .JgBBMr
-                 rBQB7                             vBBBi
-               PBBr                                   vBQI
-             ZBD.                                       .QBX
-           IBg                                             BBv
-          BB.                                               .BB
-        vBY      qq.       ...:r::i.::i::i:..        :dI      XBi
-       DB     :BBR      ..: .:.  :  : ..  ::....       BBB.    .B2
-      BB   g:1BBi     .r:   .   ..  :  :.   .   :i.     7BQ7rd   Bb
-     gB   BE.BIi:   .:. ..:i.   i   i   :   .i:.. .:.   i:PB BB   BI
-    YB   BB :iIB   :.    ..  ..:: dd7BQ:.:..  ..    .:  .BJi. Qd   Bi
-    B  B BQ QBB   i     .:     :  BR XBB .     :.     i   BBD BB.B :B
-   BM PB BQBU:   :      i      i    :BM  i      i      i   iXBBB Bv BB
-  .B  BB Qu P7  i....  :.     ..    X    :      ..  ....i  u1 qg BB  B
-  BB  BB  rBB  i    ...i....  :.   .5    :. .....i...    :  BBi .BB  Bj
-  B   BB DBZ  .:      ..   .i...# maxtor #...: .    :       :   BBI.BZ  iB
- jQ Y: BQB..  :       :.      :           .      ..      .:   :BMB Y: B
- BB MB RB  B  i       :       .   rEXEi   .       :       :  B  BS B1 B
- BZ vB: : BP  i.......:        1B .QBd  Bv       .:.......:  BB r vB: B
- BM  BB  BB   i . . . :  .:rUZBBB  rB:  BBBE1i:.  : ... . i   BB .BB  B
- BB  KBgiBY   :        rBBBBBBQB.   Q   iBBBBBBBBi        :   KB:BBL  B
- vB L YBBB Qi :        BBBBQBBBB:  5B7  7BBBBBBBBZ       .: LK BQQi r B
-  B rB  BR Bd  :       BQBQBQBBBQ  MQS  QBQBBBBBBB       :  BB BB  B.:B
-  QQ BB. : QB  :    . :BBBBBBBBBB7 bBs 5BBBBBBBBBB. .   ..  BB i :BB BY
-   B  BBB  BQ i :...  :BBBBBQBBBBB:KBJiBBBBBBBBBBB   ..:. r BB  BBQ  B
-   BB  uBBiBB Bj .    PBBQBBBBBQBBBBBQBBBBBBBQBQBBJ    . dB BRrBB7  BQ
-    B. 7 vBBQ rB: .   QBBBBBBBBBBBBBQBBBBBBBBBBBBBZ   . 7B..BBBr 7 7B
-    7B iB.  K5 BB     BQBBBBBQBQBBBBBBBQBBBBBBBBBBB     BB D1  iB. Q:
-     bQ .BBP:: YBd 5  BBQBBBBBBBQBQBBBQBBBBBQBBBBBB  X BBi ::gBB  BJ
-      gB  rBBBBrZB.uB7BBBBBBBBBQBBBBBQBBBQBBBBBBBQBrBi:QqrBBBQ:  BI
-       KB.  ivqBMBB 1BBBBBBBBBBBBBBBBBBBBBBBBBBBBBQB7 BBMBSvi  :BY
-        rQ5 .u7:. :r .KQBBBBBBBBBQBQBBBBBBBBBBBQBQS  7: .:vJ  DB:
-          QB  iBBBBBBBBBQKrQQBBBBBBBBBBBBBBBQZrPQBBBBBBBBQ: .BB
-           7Bg   :i:..    iQBBBBBBBQBQBBBBBBBRi    ..:r.   BBi
-             XBR  .2ZQBBBBBBQBBBBBBBBBBBBBBBQBBBBBBQE1. .BBu
-               uBQi  .r7i  BBQBBBBBQBBBBBBBBBQ .rri.  rBBv
-                 :gBgi     BQBBBBBBBQBBBBBBBBB     rMBZ.
-                    idBBgrJBBBBBBBBBBBBBBBBBBB77QBBP:
-                        .rv1XZMQQBBBBBBBQQgZSu7i
-                                  bay""")
-
-
-
+print ("♡ WELCOME ♡")
+print ("<Created By Snipe4Kill>")
 
 bot = Bot(input("Please enter your Auth:"))
 target=input("group guid: ")
@@ -82,7 +38,7 @@ def hasAds(msg):
 answered = [bot.getGroupAdmins]
 retries = {}
 sleeped = False
-# Creator = maxtor
+# Creator = shayan Heydari (snipe4Kill)
 plus= True
 
 while True:
@@ -115,7 +71,7 @@ while True:
 						bot.sendMessage(target, "کاربر مورد نظر افزوده شد!", message_id=msg.get("message_id"))
 
 					elif msg.get("text") == "دستورات":
-						bot.sendMessage(target, "لیسـت دستـــورات ربـات 🤖:\n\n●🤖 (ربات آنلاینی؟) : فعال یا غیر فعال بودن بات\n\n●❎ (پایان) : غیر فعال سازی بات\n\n●✅ (شروع) : فعال سازی بات\n\n●🕘 (ساعت) : ساعت\n\n●📅 (تاریخ میلادی) : تاریخ\n\n●📋 (پاک) : حذف پیام با ریپ بر روی ان\n\n●🔒 (بستن گروه) : بستن چت در گروه\n\n●🔓 (باز کردن گروه) : باز کردن چت در گروه\n\n●❌ (بن) : حذف کاربر با ریپ زدن\n\n●✉ send : ارسال پیام با استفاده از ایدی\n\n●📌 add : افزودن کاربر به گپ با ایدی\n\n●📜 (دستورات) : لیست دستورات ربات\n\n●🆑 cal :ماشین حساب\n\n●🔴 (user) : اطلاعات کاربر با ایدی\n\n●😂 (جوک) : ارسال جوک\n\n●🔵 (فونت) : ارسال فونت\n\n●🔴 (پینگ) : گرفتن پینگ سایت\n\n●🔵 trans : مترجم انگلیسی\n\n●🔴 (زمان) : تاریخ و ساعت")
+						bot.sendMessage(target, "لیسـت دستـــورات ربـات 🤖:\n\n●🤖 (ربات آنلاینی؟) : فعال یا غیر فعال بودن بات\n\n●❎ (پایان) : غیر فعال سازی بات\n\n●✅ (شروع) : فعال سازی بات\n\n●🕘 (ساعت) : ساعت\n\n●📅 (تاریخ میلادی) : تاریخ\n\n●📋 (پاک) : حذف پیام با ریپ بر روی ان\n\n●🔒 (بستن گروه) : بستن چت در گروه\n\n●🔓 (باز کردن گروه) : باز کردن چت در گروه\n\n●❌ (بن) : حذف کاربر با ریپ زدن\n\n●✉ send : ارسال پیام با استفاده از ایدی\n\n●📌 add : افزودن کاربر به گپ با ایدی\n\n●📜 (دستورات) : لیست دستورات ربات\n\n●🆑 cal :ماشین حساب\n\n●🔴 (user) : اطلاعات کاربر با ایدی\n\n●😂 (جوک) : ارسال جوک\n\n●🔵 (فونت) : ارسال فونت\n\n●🔴 (پینگ) : گرفتن پینگ سایت\n\n●🔵 trans : مترجم انگلیسی\n\n●🔴 (زمان) : تاریخ و ساعت\n\n●🔴 (بیوگرافی) : بیوگرافی\n\n●🔴 (پ ن پ) : جوک پ ن پ\n\n●🔴 (الکی مثلا) : جوک الکی مثلا\n\n●🔴 (داستان) : داستان های کوتاه\n\n●🔴 (دانستنی) : دانستنی ها\n\n●🔴 (دیالوگ) : دیالوگ های ماندگار\n\n●🔴 (!weather) : آب و هوا\n\n●🔴 (حدیث) : سخن بزرگان\n\n●🔴 (ذکر) : ذکر روز ها\n\nسازنده @TGGAMES")
 					elif msg.get("text").startswith("cal"):
 						msd = msg.get("text")
 						if plus == True:
@@ -144,54 +100,46 @@ while True:
 						bot.sendMessage(bot.getInfoByUsername(msg.get("text").split(" ")[1][1:])["data"]["chat"]["object_guid"], "شما یک پیام ناشناس دارید:\n"+" ".join(msg.get("text").split(" ")[2:]))
 						bot.sendMessage(target, "پیام ناشناستو ارسال کردم😉👌", message_id=msg.get("message_id"))
 
-					elif msg.get("text") == "سلام":
+					elif msg.get("text").startswith("سلام"):
 						bot.sendMessage(target, "هــای😍🌹", message_id=msg.get("message_id"))
 						
-					elif msg.get("text") == "خوبی":
+					elif msg.get("text").startswith("صلم"):
+						bot.sendMessage(target, "هــای😍🌹", message_id=msg.get("message_id"))
+						
+					elif msg.get("text").startswith("صلام"):
+						bot.sendMessage(target, "هــای😍🌹", message_id=msg.get("message_id"))
+						
+					elif msg.get("text").startswith("سلم"):
+						bot.sendMessage(target, "هــای😍🌹", message_id=msg.get("message_id"))
+						
+					elif msg.get("text").startswith("سیلام"):
+						bot.sendMessage(target, "هــای😍🌹", message_id=msg.get("message_id"))
+						
+					elif msg.get("text").startswith("صیلام"):
+						bot.sendMessage(target, "هــای😍🌹", message_id=msg.get("message_id"))
+						
+					elif msg.get("text").startswith("خوبی"):
 						bot.sendMessage(target, "تو چطوری؟🤪", message_id=msg.get("message_id"))
 						
-					elif msg.get("text") == "چه خبر":
+					elif msg.get("text").startswith("چه خبر"):
 						bot.sendMessage(target, "ســلامـتیت😍♥", message_id=msg.get("message_id"))
-					
-					elif msg.get("text") == "صلم":
-						bot.sendMessage(target, "برید کنار ستون گنگ اومد🤮🤢💩", message_id=msg.get("message_id"))
-						
-					elif msg.get("text") == "صلام":
-						bot.sendMessage(target, "برگرد به اول دبستان یاد بگیری سلامو چه جوری مینویسن😂😂", message_id=msg.get("message_id"))
 						
 					elif msg.get("text") == "چخبر":
 						bot.sendMessage(target, "ســلامـتیت😍♥", message_id=msg.get("message_id"))
+						
+					elif msg.get("text") == "قوانین":
+						name = bot.getGroupInfo(target)["data"]["group"]["group_title"]
+						bot.sendMessage(target, "🌀 قوانین گروه {name} :\n\n⛔️ ارسال لینک ممنوع!\n⛔️ ارسال فحش ممنوع!\n⛔️ توهین به کسی ممنوع!\n⛔️ارسال از کانال (فروارد) ممنوع!", message_id=msg.get("message_id"))
 							
-					elif msg.get("text") == "ربات":
+					elif msg.get("text").startswith("ربات"):
 						bot.sendMessage(target, "جــونـم😁💋", message_id=msg.get("message_id"))
 						
 					elif msg.get("text") == "استغفرالله":
 						bot.sendMessage(target, "توبه توبه", message_id=msg.get("message_id"))
 						
-					elif msg.get("text") == "لینک":
-						bot.sendMessage(target, "لینک گپو میخایی از ادمین بگیر خب", message_id=msg.get("message_id"))	
-						
-					elif msg.get("text") == "اسمت چیه؟":
-						bot.sendMessage(target, "رباتم اچ ال// اچ الم ربات😁", message_id=msg.get("message_id"))
-					
-					elif msg.get("text") == "جون":
-						bot.sendMessage(target, "دوست داشتیا😍😉", message_id=msg.get("message_id"))
-						
 					elif msg.get("text") == "سبحان الله":
 						bot.sendMessage(target, "😱😂", message_id=msg.get("message_id"))
 						
-                                        elif msg.get("text") == "رل":
-						bot.sendMessage(target, "رل خوب نیس جاست فرند😜😉", message_id=msg.get("message_id"))
-						
-					elif msg.get("text") == "علی اچ ال":
-						bot.sendMessage(target, "کسی منو کار داشت؟ پیوی پیامم بده😘", message_id=msg.get("message_id"))
-						
-					elif msg.get("text") == "رباط":
-						bot.sendMessage(target, "زود بگو میخام برم😂😎", message_id=msg.get("message_id"))	
-						
-					elif msg.get("text") == "🤣":
-						bot.sendMessage(target, "جر نخوری حالا😂😂", message_id=msg.get("message_id"))
-					
 					elif msg.get("text") == "😂":
 						bot.sendMessage(target, "😂😂", message_id=msg.get("message_id"))
 						
@@ -272,7 +220,7 @@ while True:
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 
-					elif msg.get("text").startswith("trans"):
+					elif msg.get("text").startswith("!trans"):
 						
 						try:
 							responser = get(f"https://api.codebazan.ir/translate/?type=json&from=en&to=fa&text={msg.get('text').split()[1:]}").json()
@@ -299,7 +247,81 @@ while True:
 							response = get("https://api.codebazan.ir/jok/").text
 							bot.sendMessage(target, response,message_id=msg.get("message_id"))
 						except:
-							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
+							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
+							
+					elif msg.get("text").startswith("ذکر"):
+						
+						try:
+							response = get("http://api.codebazan.ir/zekr/").text
+							bot.sendMessage(target, response,message_id=msg.get("message_id"))
+						except:
+							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
+							
+					elif msg.get("text").startswith("حدیث"):
+						
+						try:
+							response = get("http://api.codebazan.ir/hadis/").text
+							bot.sendMessage(target, response,message_id=msg.get("message_id"))
+						except:
+							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
+							
+					elif msg.get("text").startswith("بیوگرافی"):
+						
+						try:
+							response = get("https://api.codebazan.ir/bio/").text
+							bot.sendMessage(target, response,message_id=msg.get("message_id"))
+						except:
+							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
+							
+					elif msg["text"].startswith("!weather"):
+						response = get(f"https://api.codebazan.ir/weather/?city={msg['text'].split()[1]}").json()
+						#print("\n".join(list(response["result"].values())))
+						try:
+							bot.sendMessage(msg["author_object_guid"], "\n".join(list(response["result"].values())[:20])).text
+							bot.sendMessage(target, "نتیجه بزودی برای شما ارسال خواهد شد...", message_id=msg["message_id"])
+						except:
+							bot.sendMessage(target, "متاسفانه نتیجه‌ای موجود نبود!", message_id=msg["message_id"])
+						
+							
+					elif msg.get("text").startswith("دیالوگ"):
+						
+						try:
+							response = get("http://api.codebazan.ir/dialog/").text
+							bot.sendMessage(target, response,message_id=msg.get("message_id"))
+						except:
+							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
+							
+					elif msg.get("text").startswith("دانستنی"):
+						
+						try:
+							response = get("http://api.codebazan.ir/danestani/").text
+							bot.sendMessage(target, response,message_id=msg.get("message_id"))
+						except:
+							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
+							
+					elif msg.get("text").startswith("داستان"):
+						
+						try:
+							response = get("http://api.codebazan.ir/dastan/").text
+							bot.sendMessage(target, response,message_id=msg.get("message_id"))
+						except:
+							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
+							
+					elif msg.get("text").startswith("پ ن پ"):
+						
+						try:
+							response = get("http://api.codebazan.ir/jok/pa-na-pa/").text
+							bot.sendMessage(target, response,message_id=msg.get("message_id"))
+						except:
+							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
+							
+					elif msg.get("text").startswith("الکی مثلا"):
+						
+						try:
+							response = get("http://api.codebazan.ir/jok/alaki-masalan/").text
+							bot.sendMessage(target, response,message_id=msg.get("message_id"))
+						except:
+							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
 							
 					elif msg.get("text").startswith("زمان"):
 						
@@ -360,7 +382,7 @@ while True:
 				
 				elif data["type"]=="AddedGroupMembers":
 					user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-					bot.sendMessage(target, f"های {user} به گروه {name} خوش اومدی😍❤️\nلطفا قوانین رو رعایت کن👌🙁\n\nمتعلق به : @ali_yazdani04", message_id=msg["message_id"])
+					bot.sendMessage(target, f"های {user} به گروه {name} خوش اومدی😍❤️\nلطفا قوانین رو رعایت کن👌🙁\n\nمتعلق به : @TGGAMES", message_id=msg["message_id"])
 				
 				elif data["type"]=="LeaveGroup":
 					user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
@@ -368,7 +390,7 @@ while True:
 					
 				elif data["type"]=="JoinedGroupByLink":
 					user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-					bot.sendMessage(target, f"های {user} به گروه {name} خوش اومدی😍❤️\nلطفا قوانین رو رعایت کن👌🙁\n\nمتعلق به : @Ali_yazdani04", message_id=msg["message_id"])
+					bot.sendMessage(target, f"های {user} به گروه {name} خوش اومدی😍❤️\nلطفا قوانین رو رعایت کن👌🙁\n\nمتعلق به : @ali_yazdani04", message_id=msg["message_id"])
 
 			answered.append(msg.get("message_id"))
 
