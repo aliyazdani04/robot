@@ -6,7 +6,7 @@ from rubika.encryption import encryption
 import time
 
 print ("♡ WELCOME ♡")
-print ("<Created By Snipe4Kill>")
+print ("<Created By Ali Hl>")
 
 bot = Bot(input("Please enter your Auth:"))
 target=input("group guid: ")
