@@ -152,6 +152,12 @@ while True:
 						
 					elif msg.get("text") == "چه خبر":
 						bot.sendMessage(target, "ســلامـتیت😍♥", message_id=msg.get("message_id"))
+					
+					elif msg.get("text") == "صلم":
+						bot.sendMessage(target, "برید کنار ستون گنگ اومد🤮🤢💩", message_id=msg.get("message_id"))
+						
+					elif msg.get("text") == "صلام":
+						bot.sendMessage(target, "برگرد به اول دبستان یاد بگیری سلامو چه جوری مینویسن😂😂", message_id=msg.get("message_id"))
 						
 					elif msg.get("text") == "چخبر":
 						bot.sendMessage(target, "ســلامـتیت😍♥", message_id=msg.get("message_id"))
@@ -162,9 +168,30 @@ while True:
 					elif msg.get("text") == "استغفرالله":
 						bot.sendMessage(target, "توبه توبه", message_id=msg.get("message_id"))
 						
+					elif msg.get("text") == "لینک":
+						bot.sendMessage(target, "لینک گپو میخایی از ادمین بگیر خب", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "اسمت چیه؟":
+						bot.sendMessage(target, "رباتم اچ ال// اچ الم ربات😁", message_id=msg.get("message_id"))
+					
+					elif msg.get("text") == "جون":
+						bot.sendMessage(target, "دوست داشتیا😍😉", message_id=msg.get("message_id"))
+						
 					elif msg.get("text") == "سبحان الله":
 						bot.sendMessage(target, "😱😂", message_id=msg.get("message_id"))
 						
+                                        elif msg.get("text") == "رل":
+						bot.sendMessage(target, "رل خوب نیس جاست فرند😜😉", message_id=msg.get("message_id"))
+						
+					elif msg.get("text") == "علی اچ ال":
+						bot.sendMessage(target, "کسی منو کار داشت؟ پیوی پیامم بده😘", message_id=msg.get("message_id"))
+						
+					elif msg.get("text") == "رباط":
+						bot.sendMessage(target, "زود بگو میخام برم😂😎", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "🤣":
+						bot.sendMessage(target, "جر نخوری حالا😂😂", message_id=msg.get("message_id"))
+					
 					elif msg.get("text") == "😂":
 						bot.sendMessage(target, "😂😂", message_id=msg.get("message_id"))
 						
@@ -333,7 +360,7 @@ while True:
 				
 				elif data["type"]=="AddedGroupMembers":
 					user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-					bot.sendMessage(target, f"های {user} به گروه {name} خوش اومدی😍❤️\nلطفا قوانین رو رعایت کن👌🙁\n\nمتعاق به : @ali_yazdani04", message_id=msg["message_id"])
+					bot.sendMessage(target, f"های {user} به گروه {name} خوش اومدی😍❤️\nلطفا قوانین رو رعایت کن👌🙁\n\nمتعلق به : @ali_yazdani04", message_id=msg["message_id"])
 				
 				elif data["type"]=="LeaveGroup":
 					user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
