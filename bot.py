@@ -382,7 +382,7 @@ while True:
 				
 				elif data["type"]=="AddedGroupMembers":
 					user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-					bot.sendMessage(target, f"های {user} به گروه {name} خوش اومدی😍❤️\nلطفا قوانین رو رعایت کن👌🙁\n\nمتعلق به : @TGGAMES", message_id=msg["message_id"])
+					bot.sendMessage(target, f"های {user} به گروه {name} خوش اومدی😍❤️\nلطفا قوانین رو رعایت کن👌🙁\n\nمتعلق به : @ali_yazdani04", message_id=msg["message_id"])
 				
 				elif data["type"]=="LeaveGroup":
 					user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
