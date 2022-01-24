@@ -367,7 +367,7 @@ while True:
 						
 						try:
 							response = get("https://api.codebazan.ir/new-year/").text
-							bot.sendMessage(target, response,message_id=msg.get("message_id")		
+							bot.sendMessage(target, response,message_id=msg.get("message_id"))		
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 		
