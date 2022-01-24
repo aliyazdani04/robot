@@ -125,7 +125,7 @@ while True:
 					elif msg.get("text").startswith("های"):
 						bot.sendMessage(target, "hi my friend🤝🏼😍", message_id=msg.get("message_id"))
 						
-					elif msg.get("text").startswith("hello"):
+					elif msg.get("text").startswith("هلو"):
 						bot.sendMessage(target, "hi my friend🤝🏼😍", message_id=msg.get("message_id"))
 					
 					elif msg.get("text").startswith("خوبی"):
@@ -169,6 +169,9 @@ while True:
 						
 					elif msg.get("text") == "🤣":
 						bot.sendMessage(target, "جر نخوری حالا😂", message_id=msg.get("message_id"))
+						
+					elif msg.get("text") == "اره بگو":
+						bot.sendMessage(target, "باش برو پیویش  @aliyazdani_04", message_id=msg.get("message_id"))
 						
 					elif msg.get("text") == "چخبر":
 						bot.sendMessage(target, "ســلامـتیت😍♥", message_id=msg.get("message_id"))
@@ -303,6 +306,46 @@ while True:
 							bot.sendMessage(target, responser,message_id=msg["message_id"])
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
+							
+					elif msg.get("text").startswith("آهن"):
+						
+						try:
+							responser = get(f"http://api.codebazan.ir/ahan/?type={msg.get('text').split()[1]}").text
+							bot.sendMessage(target, responser,message_id=msg["message_id"])
+						except:
+							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
+							
+					elif msg.get("text").startswith("قیمت خودرو"):
+						
+						try:
+							responser = get(f"http://api.codebazan.ir/car-price/?type={msg.get('text').split()[1]}").text
+							bot.sendMessage(target, responser,message_id=msg["message_id"])
+						except:
+							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])	
+							
+					elif msg.get("text").startswith("لغت نامه"):
+						
+						try:
+							responser = get(f"https://api.codebazan.ir/vajehyab/?text={msg.get('text').split()[1]}").text
+							bot.sendMessage(target, responser,message_id=msg["message_id"])
+						except:
+							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
+							
+					elif msg.get("text").startswith("قیمت موبایل"):
+						
+						try:
+							responser = get(f"https://api.codebazan.ir/mobile-price/?type={msg.get('text').split()[1]}").text
+							bot.sendMessage(target, responser,message_id=msg["message_id"])
+						except:
+							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
+							
+					elif msg.get("text").startswith("فال"):
+						
+						try:
+							responser = get(f"https://api.codebazan.ir/ghazaliyathafez/?type=all&id={msg.get('text').split()[1]}").text
+							bot.sendMessage(target, responser,message_id=msg["message_id"])
+						except:
+							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])		
 
 					elif msg.get("text").startswith("!trans"):
 						
@@ -474,7 +517,7 @@ while True:
 					
 				elif data["type"]=="JoinedGroupByLink":
 					user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-					bot.sendMessage(target, f"سلام {user} به گروه {name} خوش اومدی😍❤️\nلطفا قوانین رو رعایت کن👌🙁\n\nمتعلق به : @ali_yazdani04", message_id=msg["message_id"])
+					bot.sendMessage(target, f"hello {user} به گروه {name} خوش اومدی😍❤️\nلطفا قوانین رو رعایت کن👌🙁\n\nمتعلق به : @ali_yazdani04", message_id=msg["message_id"])
 
 			answered.append(msg.get("message_id"))
 
