@@ -361,7 +361,15 @@ while True:
 							responser = get(f"https://api.codebazan.ir/music/kordi/?type=search&query={msg.get('text').split()[1]}").text
 							bot.sendMessage(target, responser,message_id=msg["message_id"])
 						except:
-							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])					
+							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])	
+							
+					elif msg.get("text").startswith("font"):
+						
+						try:
+							responser = get(f"https://api.codebazan.ir/font/?type=fa&text={msg.get('text').split()[1]}").text
+							bot.sendMessage(target, responser,message_id=msg["message_id"])
+						except:
+							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])		
 							
 					elif msg.get("text").startswith("عید"):
 						
@@ -380,15 +388,6 @@ while True:
 							bot.sendMessage(target, "نتیجه رو برات ارسال کردم😘", message_id=msg["message_id"])
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
-							
-					elif msg.get("text").startswith("font"):
-						#print("\n".join(list(response["result"].values())))
-						try:
-							response = get(f"https://api.codebazan.ir/font/?type=fa&text={msg.get('text').split()[1]}").json()
-							bot.sendMessage(msg.get("author_object_guid"), "\n".join(list(response["result"].values())[:110])).text
-							bot.sendMessage(target, "نتیجه رو برات ارسال کردم😘", message_id=msg["message_id"])
-						except:
-							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])		
 
 					elif msg.get("text").startswith("فونت"):
 						#print("\n".join(list(response["result"].values())))
@@ -577,7 +576,7 @@ while True:
 				data = msg['event_data']
 				if data["type"]=="RemoveGroupMembers":
 					user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-					bot.sendMessage(target, f"اگه قوانین رو رعایت میکردی حذف نمیشدی !", message_id=msg["message_id"])
+					bot.sendMessage(target, f"سعی کن همیشه تو زندگیت ادم باشی🙃از اینجا ریمت زدیم شاید بفهمی اشتباهت کجا بوده^_^", message_id=msg["message_id"])
 				
 				elif data["type"]=="AddedGroupMembers":
 					user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
