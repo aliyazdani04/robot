@@ -315,7 +315,7 @@ while True:
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 							
-					elif msg.get("text").startswith("قیمت خودرو"):
+					elif msg.get("text").startswith("خودرو"):
 						
 						try:
 							responser = get(f"http://api.codebazan.ir/car-price/?type={msg.get('text').split()[1]}").text
@@ -323,7 +323,7 @@ while True:
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])	
 							
-					elif msg.get("text").startswith("لغت نامه"):
+					elif msg.get("text").startswith("معنی"):
 						
 						try:
 							responser = get(f"https://api.codebazan.ir/vajehyab/?text={msg.get('text').split()[1]}").text
@@ -347,7 +347,7 @@ while True:
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 					
-					elif msg.get("text").startswith("تعبیر خواب"):
+					elif msg.get("text").startswith("خواب"):
 						
 						try:
 							responser = get(f"https://api.codebazan.ir/tabir/?text={msg.get('text').split()[1]}").text
@@ -381,7 +381,7 @@ while True:
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 							
-					elif msg.get("text").startswith("فونت فارسی"):
+					elif msg.get("text").startswith("فونت+فارسی"):
 						#print("\n".join(list(response["result"].values())))
 						try:
 							response = get(f"https://api.codebazan.ir/font/?type=fa&text={msg.get('text').split()[1]}").json()
