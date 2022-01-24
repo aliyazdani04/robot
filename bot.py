@@ -307,22 +307,6 @@ while True:
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 							
-					elif msg.get("text").startswith("آهن"):
-						
-						try:
-							responser = get(f"http://api.codebazan.ir/ahan/?type={msg.get('text').split()[1]}").text
-							bot.sendMessage(target, responser,message_id=msg["message_id"])
-						except:
-							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
-							
-					elif msg.get("text").startswith("خودرو"):
-						
-						try:
-							responser = get(f"http://api.codebazan.ir/car-price/?type={msg.get('text').split()[1]}").text
-							bot.sendMessage(target, responser,message_id=msg["message_id"])
-						except:
-							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])	
-							
 					elif msg.get("text").startswith("معنی"):
 						
 						try:
@@ -355,6 +339,14 @@ while True:
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 							
+					elif msg.get("text").startswith("اوقات"):
+						
+						try:
+							responser = get(f"https://api.codebazan.ir/owghat/?city={msg.get('text').split()[1]}").text
+							bot.sendMessage(target, responser,message_id=msg["message_id"])
+						except:
+							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
+							
 					elif msg.get("text").startswith("فال"):
 						
 						try:
@@ -363,11 +355,19 @@ while True:
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])	
 							
+					elif msg.get("text").startswith("آهنگ"):
+						
+						try:
+							responser = get(f"https://api.codebazan.ir/music/kordi/?type=search&query={msg.get('text').split()[1]}").text
+							bot.sendMessage(target, responser,message_id=msg["message_id"])
+						except:
+							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])					
+							
 					elif msg.get("text").startswith("عید"):
 						
 						try:
 							response = get("https://api.codebazan.ir/new-year/").text
-							bot.sendMessage(target, response,message_id=msg.get("message_id"))
+							bot.sendMessage(target, response,message_id=msg.get("message_id")		
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 		
@@ -381,7 +381,7 @@ while True:
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 							
-					elif msg.get("text").startswith("فونت+فارسی"):
+					elif msg.get("text").startswith("font"):
 						#print("\n".join(list(response["result"].values())))
 						try:
 							response = get(f"https://api.codebazan.ir/font/?type=fa&text={msg.get('text').split()[1]}").json()
@@ -405,6 +405,38 @@ while True:
 						
 						try:
 							response = get("https://api.codebazan.ir/jok/").text
+							bot.sendMessage(target, response,message_id=msg.get("message_id"))
+						except:
+							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
+									
+					elif msg.get("text").startswith("بورس"):
+						
+						try:
+							response = get("https://api.codebazan.ir/bours/").text
+							bot.sendMessage(target, response,message_id=msg.get("message_id"))
+						except:
+							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])				
+							
+					elif msg.get("text").startswith("غزل"):
+						
+						try:
+							response = get("https://api.codebazan.ir/ghazalsaadi/").text
+							bot.sendMessage(target, response,message_id=msg.get("message_id"))
+						except:
+							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
+							
+					elif msg.get("text").startswith("چیستان"):
+						
+						try:
+							response = get("https://api.codebazan.ir/chistan/").text
+							bot.sendMessage(target, response,message_id=msg.get("message_id"))
+						except:
+							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])		
+							
+					elif msg.get("text").startswith("اخبار"):
+						
+						try:
+							response = get("https://api.codebazan.ir/khabar/?kind=iran").text
 							bot.sendMessage(target, response,message_id=msg.get("message_id"))
 						except:
 							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
@@ -459,6 +491,13 @@ while True:
 						except:
 							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
 							
+					elif msg.get("text").startswith("همسر"):
+						
+						try:
+							response = get("https://api.codebazan.ir/name/?type=json").text
+							bot.sendMessage(target, response,message_id=msg.get("message_id"))
+						except:
+							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])				
 					elif msg.get("text").startswith("داستان"):
 						
 						try:
