@@ -195,7 +195,7 @@ while True:
 						bot.sendMessage(target, "علیم اچ ال/ اچ الم علی", message_id=msg.get("message_id"))
 						
 					elif msg.get("text") == "اصل":
-						bot.sendMessage(target, "رباتم اچ ال/اچ الم ربات😂   بقیش هم توکانال بخون @robotHL", message_id=msg.get("message_id"))
+						bot.sendMessage(target, "باتم اچ ال/اچ الم ربات😂   بقیش هم توکانال بخون @robotHL", message_id=msg.get("message_id"))
 					
 					elif msg.get("text") == "ریده":
 						bot.sendMessage(target, "خودت ریدی بیتربیت🤨🤨", message_id=msg.get("message_id"))
@@ -292,6 +292,14 @@ while True:
 						
 						try:
 							responser = get(f"https://api.codebazan.ir/ping/?url={msg.get('text').split()[1]}").text
+							bot.sendMessage(target, responser,message_id=msg["message_id"])
+						except:
+							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
+						
+					elif msg.get("text").startswith("ارز"):
+						
+						try:
+							responser = get(f"http://api.codebazan.ir/arz/?type={msg.get('text').split()[1]}").text
 							bot.sendMessage(target, responser,message_id=msg["message_id"])
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
@@ -462,11 +470,11 @@ while True:
 				
 				elif data["type"]=="LeaveGroup":
 					user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-					bot.sendMessage(target, f"موفق باشی 👋", message_id=msg["message_id"])
+					bot.sendMessage(target, f"مراقبت کن😈😘", message_id=msg["message_id"])
 					
 				elif data["type"]=="JoinedGroupByLink":
 					user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-					bot.sendMessage(target, f"های {user} به گروه {name} خوش اومدی😍❤️\nلطفا قوانین رو رعایت کن👌🙁\n\nمتعلق به : @ali_yazdani04", message_id=msg["message_id"])
+					bot.sendMessage(target, f"سلام {user} به گروه {name} خوش اومدی😍❤️\nلطفا قوانین رو رعایت کن👌🙁\n\nمتعلق به : @ali_yazdani04", message_id=msg["message_id"])
 
 			answered.append(msg.get("message_id"))
 
