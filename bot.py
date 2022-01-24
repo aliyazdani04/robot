@@ -101,7 +101,7 @@ while True:
 						bot.sendMessage(target, "پیام ناشناستو ارسال کردم😉👌", message_id=msg.get("message_id"))
 
 					elif msg.get("text").startswith("سلام"):
-						bot.sendMessage(target, "سلام برتو😍🌹", message_id=msg.get("message_id"))
+						bot.sendMessage(target, "ثلام برتو😍🌹", message_id=msg.get("message_id"))
 						
 					elif msg.get("text").startswith("صلم"):
 						bot.sendMessage(target, "ثلم😑😐", message_id=msg.get("message_id"))
@@ -125,7 +125,7 @@ while True:
 					elif msg.get("text").startswith("های"):
 						bot.sendMessage(target, "hi my friend🤝🏼😍", message_id=msg.get("message_id"))
 						
-					elif msg.get("text").startswith("hi"):
+					elif msg.get("text").startswith("hello"):
 						bot.sendMessage(target, "hi my friend🤝🏼😍", message_id=msg.get("message_id"))
 					
 					elif msg.get("text").startswith("خوبی"):
@@ -147,7 +147,7 @@ while True:
 						bot.sendMessage(target, "بگم علی بیاد🤔🤨", message_id=msg.get("message_id"))
 					
 					elif msg.get("text") == "علی کیه":
-						bot.sendMessage(target, "علی عشقه منه علی همه کسمه😍❤", message_id=msg.get("message_id"))
+						bot.sendMessage(target, " عشقه منه علی همه کسمه😍❤", message_id=msg.get("message_id"))
 						
 					elif msg.get("text") == "سوکنیه":
 						bot.sendMessage(target, "بدبختو نگا کارش به سوکینه گیره😂😂", message_id=msg.get("message_id"))
