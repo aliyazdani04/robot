@@ -387,6 +387,57 @@ while True:
 					elif msg.get("text") == "نازی":
 						bot.sendMessage(target, "چقد شبیه غازی😂😂", message_id=msg.get("message_id"))
 						
+					elif msg.get("text") == "کثافت":
+						bot.sendMessage(target, "ریدم تو اون قیافت با نرمی و لطافت😂😂", message_id=msg.get("message_id"))
+						
+					elif msg.get("text") == "کثافط":
+						bot.sendMessage(target, "ریدم تو اون قیافت با نرمی و لطافت😂😂", message_id=msg.get("message_id"))
+						
+					elif msg.get("text") == "مبینا":
+						bot.sendMessage(target, "بخور ازینا😈🥒", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "تو":
+						bot.sendMessage(target, "سرت تو گوه😂", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "سحر":
+						bot.sendMessage(target, "خاستی بدی بده یه خبر😂😂", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "فرشته":
+						bot.sendMessage(target, "ممه بدی جات بهشته.ندی کارت خیلی زشته😂😂", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "ستاره":
+						bot.sendMessage(target, "کس ننت میخاره😂🥒", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "اکبر":
+						bot.sendMessage(target, "لاپات شیشتا کفتر😂😂", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "پری":
+						bot.sendMessage(target, "رو کونت بسته رو سری😂😂", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "پریا":
+						bot.sendMessage(target, "اونجا ها نریا😂😂❤", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "هستی":
+						bot.sendMessage(target, "تو کونت ترمز دستی😂❤", message_id=msg.get("message_id"))
+						
+					elif msg.get("text") == "امیرعلی":
+						bot.sendMessage(target, "به من میدی یا بغلی؟😂🤝🏼", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "متین":
+						bot.sendMessage(target, "بشین روش برین😂", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "زهرا":
+						bot.sendMessage(target, "مامانت رفت به صحرا😂💖", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "حسن":
+						bot.sendMessage(target, "تخمام برات دل واپسن😂💖", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "آفرین":
+						bot.sendMessage(target, "میخامت💖", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "😘":
+						bot.sendMessage(target, "چه خوب بوس میکنی😍😍", message_id=msg.get("message_id"))		
+						
 					elif msg.get("text").startswith("گاییدم"):
 						bot.deleteMessages(target, [str(msg.get("message_id"))])
 						
