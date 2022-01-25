@@ -270,8 +270,122 @@ while True:
 					elif msg.get("text") == "😂":
 						bot.sendMessage(target, "😂😂", message_id=msg.get("message_id"))
 						
-					elif msg.get("text") == "😐":
-						bot.sendMessage(target, "من موندم چرا انقدر پوکر میدین!", message_id=msg.get("message_id"))
+					elif msg.get("text") == "سجاد":
+						bot.sendMessage(target, "سرش به صد جات😂🤝🏼💖", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "زر نزن":
+						bot.sendMessage(target, "خب تو زر بزن😂", message_id=msg.get("message_id"))
+						
+					elif msg.get("text") == "معصومه":
+						bot.sendMessage(target, "کونت برام کپسوله😂🌹", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "مانی":
+						bot.sendMessage(target, "تو کونت قوطی رانی😂", message_id=msg.get("message_id"))
+						
+					elif msg.get("text") == "امین":
+						bot.sendMessage(target, "کون بده بعد برین- سوراخ کونت به این💖😂", message_id=msg.get("message_id"))
+						
+					elif msg.get("text") == "هدایت":
+						bot.sendMessage(target, "یه کون بده فدایت😂💖", message_id=msg.get("message_id"))
+					
+					elif msg.get("text") == "علی":
+						bot.sendMessage(target, "وقتی دیدش در نری.اینو بخوری اولی💖😂😋", message_id=msg.get("message_id"))
+						
+					elif msg.get("text") == "هانی":
+						bot.sendMessage(target, "تو الکسیس من جانی😋😈", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "صابر":
+						bot.sendMessage(target, "Fuck Your Mother😂", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "جواد":
+						bot.sendMessage(target, "کیرم کنجه لبات😂😂", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "نگار":
+						bot.sendMessage(target, "کردمت شدی رستگار😂😂💖", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "هادی":
+						bot.sendMessage(target, "توکونت تفنگ بادی😂😂", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "ندا":
+						bot.sendMessage(target, "ساک بزن بی سر و صدا😂😂❤", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "فاطی":
+						bot.sendMessage(target, "عمت کرده قاطی.کونت شده خاکی.خوراکه انگشته فاکی😂🥒❤", message_id=msg.get("message_id"))
+						
+					elif msg.get("text") == "وحید":
+						bot.sendMessage(target, "ریدم تو اسمت شدید😂💩", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "آریا":
+						bot.sendMessage(target, "سرشو بگیر را بیا😂😂", message_id=msg.get("message_id"))
+						
+					elif msg.get("text") == "پژو":
+						bot.sendMessage(target, "اینو بگیر بجو😂🥒", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "کوفت":
+						bot.sendMessage(target, "گایدنت مفت😂💖", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "کوفته":
+						bot.sendMessage(target, "گایدنت موفته😂😂", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "ایمان":
+						bot.sendMessage(target, "تو کونت پاکت سیمان😂💖", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "مرضیه":
+						bot.sendMessage(target, "نوار بهداشتیت قرضیه😂😂", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "امیر":
+						bot.sendMessage(target, "بیا زیرش بمیر😂😂", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "عمیر":
+						bot.sendMessage(target, "بیا زیرش بمیر😂💖", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "غلط کردی":
+						bot.sendMessage(target, "سرشو لقت کردی😂😂", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "ماعده":
+						bot.sendMessage(target, "کیرمو توکونت جا بده😂❤", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "عشقم":
+						bot.sendMessage(target, "بکش پایین تنشم😂💧", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "مهناز":
+						bot.sendMessage(target, "بخور کیرمو با ناز😂❤", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "دیوس":
+						bot.sendMessage(target, "دولاشو سرشو ببوس نخاستی کونمو ببوس❤💖😂", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "دیوص":
+						bot.sendMessage(target, "دولاشو سرشو ببوس نخاستی کونمو ببوس❤💖😂", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "دیوث":
+						bot.sendMessage(target, "دولاشو سرشو ببوس نخاستی کونمو ببوس❤💖😂", message_id=msg.get("message_id"))
+						
+					elif msg.get("text") == "نازنین":
+						bot.sendMessage(target, "لخت شو بخواب رو زمین🤝🏼💧💖😈", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "احسان":
+						bot.sendMessage(target, "کردمت پشت نیسان🤝🏼😂", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "میلاد😂":
+						bot.sendMessage(target, "از مامانت بپرس دیشب به کی داد😂😂💖", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "امید":
+						bot.sendMessage(target, "بابام پرده ننتو درید😂😂💖", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "لیلا":
+						bot.sendMessage(target, "بشو دولا. بخور یالا😂😂", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "حامد":
+						bot.sendMessage(target, "کردمت با روغن جامد😂💖", message_id=msg.get("message_id"))
+						
+					elif msg.get("text") == "عجب":
+						bot.sendMessage(target, "کیره مش رجب. دست زدی بش بود چند وجب؟😂🤔", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "عباس":
+						bot.sendMessage(target, "عنم برات مرباس😂💖", message_id=msg.get("message_id"))	
+						
+					elif msg.get("text") == "نازی":
+						bot.sendMessage(target, "چقد شبیه غازی😂😂", message_id=msg.get("message_id"))
 						
 					elif msg.get("text").startswith("گاییدم"):
 						bot.deleteMessages(target, [str(msg.get("message_id"))])
