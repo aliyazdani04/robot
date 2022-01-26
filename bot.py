@@ -366,7 +366,7 @@ while True:
 					elif msg.get("text") == "احسان":
 						bot.sendMessage(target, "کردمت پشت نیسان🤝🏼😂", message_id=msg.get("message_id"))	
 						
-					elif msg.get("text") == "میلاد😂":
+					elif msg.get("text") == "میلاد":
 						bot.sendMessage(target, "از مامانت بپرس دیشب به کی داد😂😂💖", message_id=msg.get("message_id"))	
 						
 					elif msg.get("text") == "امید":
@@ -567,14 +567,7 @@ while True:
 							bot.sendMessage(target, responser,message_id=msg["message_id"])
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])	
-							
-	
-						
-
 					
-م
-
-							
 					elif msg.get("text").startswith("font"):
 						
 						try:
@@ -582,14 +575,7 @@ while True:
 							bot.sendMessage(target, responser,message_id=msg["message_id"])
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])		
-							
-					elif msg.get("text").startswith("عید"):
-						
-						try:
 
-							bot.sendMessage(target, response,message_id=msg.get("message_id"))		
-						except:
-							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 		
 					elif msg.get("text").startswith("!trans"):
 						
