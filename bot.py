@@ -101,7 +101,7 @@ while True:
 								
 						elif msg.get("text").startswith("سازنده") and msg.get("author_object_guid") in creator :
 							try:
-								bot.sendMessage(target, "سلا‌م با‌با شما سازنده من هستی و شما [snipe4kill] مدیر تیجی گیمز هستی!", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "سلا‌م با‌با شما سازنده من هستی ", message_id=msg.get("message_id"))
 							except:
 								print("err admin")
 								
