@@ -461,7 +461,7 @@ while True:
 							except:
 								print("err poker answer")
 								
-                                        elif msg.get("text") == "سنجاق" and msg.get("author_object_guid") in admins :
+                                       elif msg.get("text") == "سنجاق" and msg.get("author_object_guid") in admins :
 							try:
 								bot.pin(target, msg["reply_to_message_id"])
 								bot.sendMessage(target, "پیام مورد نظر با موفقیت سنجاق شد!", message_id=msg.get("message_id"))
