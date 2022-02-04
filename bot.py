@@ -431,7 +431,7 @@ while True:
 					elif msg.get("text") == "😘":
 						bot.sendMessage(target, "چه خوب بوس میکنی😍😍", message_id=msg.get("message_id"))	
 								
-						elif msg.get("text").startswith("خوبی") or msg.get("text").startswith("خبی"):
+					elif msg.get("text").startswith("خوبی") or msg.get("text").startswith("خبی"):
 							try:
 								bot.sendMessage(target, "تو چطوری؟🤪", message_id=msg.get("message_id"))
 							except:
