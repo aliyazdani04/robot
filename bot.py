@@ -564,7 +564,7 @@ while True:
 							except:
 								print("err delete forwared")
 						
-				        elif msg.get("text").startswith("ارز"):
+		          	       elif msg.get("text").startswith("ارز"):
 						
 						try:
 							responser = get(f"http://api.codebazan.ir/arz/?type={msg.get('text').split()[1]}").text
