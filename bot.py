@@ -530,6 +530,15 @@ while True:
 						except:
 							print("err Leave member Answer")
 							
+					elif msg.get("text").startswith("فونت"):
+						#print("\n".join(list(response["result"].values())))
+						try:
+							response = get(f"https://api.codebazan.ir/font/?text={msg.get('text').split()[1]}").json()
+							bot.sendMessage(msg.get("author_object_guid"), "\n".join(list(response["result"].values())[:110])).text
+							bot.sendMessage(target, "نتیجه رو برات ارسال کردم😘", message_id=msg["message_id"])
+						except:
+							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])		
+							
 					elif data["type"]=="JoinedGroupByLink":
 						try:
 							user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
