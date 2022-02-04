@@ -556,7 +556,7 @@ while True:
 							except:
 								bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 						
-		          	        elif msg.get("text").startswith("ارز"):
+		       	        elif msg.get("text").startswith("ارز"):
 						
 						try:
 							responser = get(f"http://api.codebazan.ir/arz/?type={msg.get('text').split()[1]}").text
