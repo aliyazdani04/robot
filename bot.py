@@ -13,17 +13,14 @@ import random
 import urllib
 import io
 
-print ("welcome, Created By Shayan Heidari (TG GAMES)\n")
+print ("welcome, Created By Ali HL\n")
 
-print ("Please subscribe to the channel to receive updates! : for telegram : @RubikaBotCreate\n")
+print ("Please subscribe to the channel to receive updates! : for telegram : @ASY0405\n")
 
 bot = Bot(input("Please enter your Auth:"))
 target=input("Please Enter Your Guid (Group): ")
 
 print ("\nThe robot was successfully activated.")
-
-creator = open('botAdmins.txt','r').read().split('\n')
-# created By HiBye & ShayanHeidari(Snipe4Kill)(TG GAMES)(libs for Bahman Ahmadi)
 
 def hasAds(msg):
 	links = ["http://","https://",".ir",".com",".org",".net",".me"]
@@ -520,7 +517,7 @@ while True:
 					elif data["type"]=="AddedGroupMembers":
 						try:
 							user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"هــای {user} عزیز 😘🌹 \n • به گـروه {name} خیـلی خوش اومدی 😍❤️ \nلطفا قوانین رو رعایت کن .\n 💎 برای مشاهده قوانین کافیه کلمه (قوانین) رو ارسال کنی!\nدوست داری ربات بسازی؟ بیا اینجا😍👇\nt.me/RubikaBotCreate", message_id=msg["message_id"])
+							bot.sendMessage(target, f"هــای {user} عزیز 😘🌹 \n • به گـروه {name} خیـلی خوش اومدی 😍❤️ \nلطفا قوانین رو رعایت کن .\n 💎 برای مشاهده قوانین کافیه کلمه (قوانین) رو ارسال کنی!\nدوست داری ربات بسازی؟ بیا اینجا😍👇\n@RobotHL", message_id=msg["message_id"])
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
 							print("err add member answer")
@@ -536,7 +533,7 @@ while True:
 					elif data["type"]=="JoinedGroupByLink":
 						try:
 							user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"هــای {user} عزیز 😘🌹 \n • به گـروه {name} خیـلی خوش اومدی 😍❤️ \nلطفا قوانین رو رعایت کن .\n 💎 برای مشاهده قوانین کافیه کلمه (قوانین) رو ارسال کنی!\nدوست داری ربات بسازی؟ بیا اینجا😍👇\nt.me/RubikaBotCreate", message_id=msg["message_id"])
+							bot.sendMessage(target, f"هــای {user} عزیز 😘🌹 \n • به گـروه {name} خیـلی خوش اومدی 😍❤️ \nلطفا قوانین رو رعایت کن .\n 💎 برای مشاهده قوانین کافیه کلمه (قوانین) رو ارسال کنی!\nدوست داری ربات بسازی؟ بیا اینجا😍👇\n@RobotHL", message_id=msg["message_id"])
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
 							print("err Joined member Answer")
