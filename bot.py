@@ -470,7 +470,7 @@ while True:
 							except:
 								bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 								
-						elif msg.get("text").startswith("!font"):
+					elif msg.get("text").startswith("!font"):
 							try:
 								response = get(f"https://api.codebazan.ir/font/?text={msg.get('text').split()[1]}").json()
 								bot.sendMessage(msg.get("author_object_guid"), "\n".join(list(response["result"].values())[:110])).text
@@ -478,35 +478,35 @@ while True:
 							except:
 								bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 						
-						elif msg.get("text").startswith("جوک") or msg.get("text").startswith("jok") or msg.get("text").startswith("!jok"):
+					elif msg.get("text").startswith("جوک") or msg.get("text").startswith("jok") or msg.get("text").startswith("!jok"):
 							try:
 								response = get("https://api.codebazan.ir/jok/").text
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
 							except:
 								bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
 							
-						elif msg.get("text").startswith("ذکر") or msg.get("text").startswith("zekr") or msg.get("text").startswith("!zekr"):
+					elif msg.get("text").startswith("ذکر") or msg.get("text").startswith("zekr") or msg.get("text").startswith("!zekr"):
 							try:
 								response = get("http://api.codebazan.ir/zekr/").text
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
 							except:
 								bot.sendMessage(target, "ببخشید، خطایی پیش اومد!", message_id=msg["message_id"])
 								
-						elif msg.get("text").startswith("حدیث") or msg.get("text").startswith("hadis") or msg.get("text").startswith("!hadis"):
+					elif msg.get("text").startswith("حدیث") or msg.get("text").startswith("hadis") or msg.get("text").startswith("!hadis"):
 							try:
 								response = get("http://api.codebazan.ir/hadis/").text
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
 							except:
 								bot.sendMessage(target, "ببخشید، خطایی تو ارسال پیش اومد!", message_id=msg["message_id"])
 								
-						elif msg.get("text").startswith("بیو") or msg.get("text").startswith("bio") or msg.get("text").startswith("!bio"):
+					elif msg.get("text").startswith("بیو") or msg.get("text").startswith("bio") or msg.get("text").startswith("!bio"):
 							try:
 								response = get("https://api.codebazan.ir/bio/").text
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
 							except:
 								bot.sendMessage(target, "ببخشید، خطایی تو ارسال پیش اومد!", message_id=msg["message_id"])
 								
-						elif msg["text"].startswith("!weather"):
+					elif msg["text"].startswith("!weather"):
 							try:
 								response = get(f"https://api.codebazan.ir/weather/?city={msg['text'].split()[1]}").json()
 								bot.sendMessage(msg["author_object_guid"], "\n".join(list(response["result"].values())[:20])).text
@@ -514,49 +514,49 @@ while True:
 							except:
 								bot.sendMessage(target, "متاسفانه نتیجه‌ای موجود نبود!", message_id=msg["message_id"])
 								
-						elif msg.get("text").startswith("دیالوگ"):
+					elif msg.get("text").startswith("دیالوگ"):
 							try:
 								response = get("http://api.codebazan.ir/dialog/").text
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
 							except:
 								bot.sendMessage(target, "متاسفانه تو ارسال مشکلی پیش اومد!", message_id=msg["message_id"])
 							
-						elif msg.get("text").startswith("دانستنی"):
+					elif msg.get("text").startswith("دانستنی"):
 							try:
 								response = get("http://api.codebazan.ir/danestani/").text
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
 							except:
 								bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
 								
-						elif msg.get("text").startswith("پ ن پ") or msg.get("text").startswith("!pa-na-pa") or msg.get("text").startswith("په نه په"):
+					elif msg.get("text").startswith("پ ن پ") or msg.get("text").startswith("!pa-na-pa") or msg.get("text").startswith("په نه په"):
 							try:
 								response = get("http://api.codebazan.ir/jok/pa-na-pa/").text
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
 							except:
 								bot.sendMessage(target, "شرمنده نتونستم بفرستم!", message_id=msg["message_id"])
 								
-						elif msg.get("text").startswith("الکی مثلا") or msg.get("text").startswith("!alaki-masalan"):
+					elif msg.get("text").startswith("الکی مثلا") or msg.get("text").startswith("!alaki-masalan"):
 							try:
 								response = get("http://api.codebazan.ir/jok/alaki-masalan/").text
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
 							except:
 								bot.sendMessage(target, "نشد بفرستم:(", message_id=msg["message_id"])
 								
-						elif msg.get("text").startswith("داستان") or msg.get("text").startswith("!dastan"):
+					elif msg.get("text").startswith("داستان") or msg.get("text").startswith("!dastan"):
 							try:
 								response = get("http://api.codebazan.ir/dastan/").text
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
 							except:
 								bot.sendMessage(target, "مشکلی پیش اومد!", message_id=msg["message_id"])
 							
-						elif msg.get("text").startswith("!ping"):
+					elif msg.get("text").startswith("!ping"):
 							try:
 								responser = get(f"https://api.codebazan.ir/ping/?url={msg.get('text').split()[1]}").text
 								bot.sendMessage(target, responser,message_id=msg["message_id"])
 							except:
 								bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 								
-						elif "forwarded_from" in msg.keys() and bot.getMessagesInfo(target, [msg.get("message_id")])[0]["forwarded_from"]["type_from"] == "Channel" and not msg.get("author_object_guid") in admins :
+					elif "forwarded_from" in msg.keys() and bot.getMessagesInfo(target, [msg.get("message_id")])[0]["forwarded_from"]["type_from"] == "Channel" and not msg.get("author_object_guid") in admins :
 							try:
 								print("Yek ahmagh forwared Zad")
 								bot.deleteMessages(target, [str(msg.get("message_id"))])
@@ -564,7 +564,7 @@ while True:
 							except:
 								print("err delete forwared")
 						
-					        elif msg.get("text").startswith("ارز"):
+				        elif msg.get("text").startswith("ارز"):
 						
 						try:
 							responser = get(f"http://api.codebazan.ir/arz/?type={msg.get('text').split()[1]}").text
@@ -572,7 +572,7 @@ while True:
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 							
-			                	elif msg.get("text").startswith("معنی"):
+		                	elif msg.get("text").startswith("معنی"):
 						
 						try:
 							responser = get(f"https://api.codebazan.ir/vajehyab/?text={msg.get('text').split()[1]}").text
@@ -580,7 +580,7 @@ while True:
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 							
-						elif msg.get("text").startswith("خواب"):
+					elif msg.get("text").startswith("خواب"):
 						
 						try:
 							responser = get(f"https://api.codebazan.ir/tabir/?text={msg.get('text').split()[1]}").text
@@ -588,7 +588,7 @@ while True:
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 							
-			              		elif msg.get("text").startswith("اوقات"):
+		              		elif msg.get("text").startswith("اوقات"):
 						
 						try:
 							responser = get(f"https://api.codebazan.ir/owghat/?city={msg.get('text').split()[1]}").text
@@ -596,7 +596,7 @@ while True:
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 							
-                                                elif msg.get("text").startswith("فال"):
+                                         elif msg.get("text").startswith("فال"):
 						
 						try:
 							responser = get(f"https://api.codebazan.ir//ghazaliyathafez/?type=ghazal&num={msg.get('text').split()[1]}").text
@@ -604,7 +604,7 @@ while True:
 						except:
 							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])	
 							
-						elif msg.get("text").startswith("بورس"):
+					elif msg.get("text").startswith("بورس"):
 						
 						try:
 							response = get("https://api.codebazan.ir/bours/").text
@@ -612,7 +612,7 @@ while True:
 						except:
 							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])				
 							
-					        elif msg.get("text").startswith("غزل"):
+				        elif msg.get("text").startswith("غزل"):
 						
 						try:
 							response = get("https://api.codebazan.ir/ghazalsaadi/").text
@@ -620,7 +620,7 @@ while True:
 						except:
 							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
 							
-				         	elif msg.get("text").startswith("چیستان"):
+			         	elif msg.get("text").startswith("چیستان"):
 						
 						try:
 							response = get("https://api.codebazan.ir/chistan/").text
@@ -628,7 +628,7 @@ while True:
 						except:
 							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])		
 							
-				         	elif msg.get("text").startswith("اخبار"):
+			         	elif msg.get("text").startswith("اخبار"):
 						
 						try:
 							response = get("https://api.codebazan.ir/khabar/?kind=iran").text
@@ -636,7 +636,7 @@ while True:
 						except:
 							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
 							
-					       elif msg.get("text").startswith("همسر"):
+				       elif msg.get("text").startswith("همسر"):
 						
 						try:
 							response = get("https://api.codebazan.ir/name/?type=json").text
@@ -644,7 +644,7 @@ while True:
 						except:
 							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
 							
-						elif msg.get("text").startswith("فونت"):
+					elif msg.get("text").startswith("فونت"):
 						#print("\n".join(list(response["result"].values())))
 						try:
 							response = get(f"https://api.codebazan.ir/font/?text={msg.get('text').split()[1]}").json()
