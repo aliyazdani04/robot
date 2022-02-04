@@ -437,38 +437,38 @@ while True:
 							except:
 								print("err answer hay")
 								
-						elif msg.get("text").startswith("چه خبر") or msg.get("text").startswith("چخبر"):
+					elif msg.get("text").startswith("چه خبر") or msg.get("text").startswith("چخبر"):
 							try:
 								bot.sendMessage(target, "ســلامـتیت😍♥", message_id=msg.get("message_id"))
 							except:
 								print("err CheKhabar")
 								
-						elif msg.get("text").startswith("ربات") or msg.get("text").startswith("بات"):
+					elif msg.get("text").startswith("ربات") or msg.get("text").startswith("بات"):
 							try:
 								bot.sendMessage(target, "جــونـم😁💋", message_id=msg.get("message_id"))
 							except:
 								print("err bot answer")
 								
-						elif msg.get("text").startswith("😂") or msg.get("text").startswith("🤣"):
+					elif msg.get("text").startswith("😂") or msg.get("text").startswith("🤣"):
 							try:
 								bot.sendMessage(target, "جــون تـو فــقط بخـند😍", message_id=msg.get("message_id"))
 							except:
 								print("err luagh")
 								
-						elif msg.get("text") == "😐":
+					elif msg.get("text") == "😐":
 							try:
 								bot.sendMessage(target, "😑😐", message_id=msg.get("message_id"))
 							except:
 								print("err poker answer")
 								
-						elif msg.get("text") == "سنجاق" and msg.get("author_object_guid") in admins :
+                                        elif msg.get("text") == "سنجاق" and msg.get("author_object_guid") in admins :
 							try:
 								bot.pin(target, msg["reply_to_message_id"])
 								bot.sendMessage(target, "پیام مورد نظر با موفقیت سنجاق شد!", message_id=msg.get("message_id"))
 							except:
 								print("err pin")
 								
-						elif msg.get("text") == "برداشتن سنجاق" and msg.get("author_object_guid") in admins :
+					elif msg.get("text") == "برداشتن سنجاق" and msg.get("author_object_guid") in admins :
 							try:
 								bot.unpin(target, msg["reply_to_message_id"])
 								bot.sendMessage(target, "پیام مورد نظر از سنجاق برداشته شد!", message_id=msg.get("message_id"))
