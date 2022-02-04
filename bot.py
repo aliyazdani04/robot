@@ -461,7 +461,7 @@ while True:
 							except:
 								print("err poker answer")
 								
-						elif msg.get("text").startswith("!trans"):
+					elif msg.get("text").startswith("!trans"):
 							try:
 								responser = get(f"https://api.codebazan.ir/translate/?type=json&from=en&to=fa&text={msg.get('text').split()[1:]}").json()
 								al = [responser["result"]]
