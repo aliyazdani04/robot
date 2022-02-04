@@ -537,7 +537,15 @@ while True:
 							bot.sendMessage(msg.get("author_object_guid"), "\n".join(list(response["result"].values())[:110])).text
 							bot.sendMessage(target, "نتیجه رو برات ارسال کردم😘", message_id=msg["message_id"])
 						except:
-							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])		
+							bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
+							
+					elif msg.get("text").startswith("غزل"):
+						
+						try:
+							response = get("https://api.codebazan.ir/ghazalsaadi/").text
+							bot.sendMessage(target, response,message_id=msg.get("message_id"))
+						except:
+							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])		
 							
 					elif data["type"]=="JoinedGroupByLink":
 						try:
