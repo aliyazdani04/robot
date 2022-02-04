@@ -461,20 +461,6 @@ while True:
 							except:
 								print("err poker answer")
 								
-                                       elif msg.get("text") == "سنجاق" and msg.get("author_object_guid") in admins:
-							try:
-								bot.pin(target, msg["reply_to_message_id"])
-								bot.sendMessage(target, "پیام مورد نظر با موفقیت سنجاق شد!", message_id=msg.get("message_id"))
-							except:
-								print("err pin")
-								
-					elif msg.get("text") == "برداشتن سنجاق" and msg.get("author_object_guid") in admins:
-							try:
-								bot.unpin(target, msg["reply_to_message_id"])
-								bot.sendMessage(target, "پیام مورد نظر از سنجاق برداشته شد!", message_id=msg.get("message_id"))
-							except:
-								print("err unpin")
-								
 						elif msg.get("text").startswith("!trans"):
 							try:
 								responser = get(f"https://api.codebazan.ir/translate/?type=json&from=en&to=fa&text={msg.get('text').split()[1:]}").json()
