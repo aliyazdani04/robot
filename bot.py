@@ -354,6 +354,13 @@ while True:
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
 							except:
 								bot.sendMessage(target, "ببخشید، خطایی تو ارسال پیش اومد!", message_id=msg["message_id"])
+								
+						elif msg.get("text").startswith("فال"):
+							try:
+								responser = get(f"https://api.codebazan.ir//ghazaliyathafez/?type=ghazal&num={msg.get('text').split()[1]}").text
+								bot.sendMessage(target, response,message_id=msg.get("message_id"))
+							except:
+								bot.sendMessage(target, "ببخشید، خطایی تو ارسال پیش اومد!", message_id=msg["message_id"])		
 							
 						elif msg.get("text").startswith("دانستنی"):
 							try:
