@@ -335,9 +335,9 @@ while True:
 						elif msg["text"].startswith("!weather"):
 						                response = get(f"https://api.codebazan.ir/weather/?city={msg['text'].split()[1]}").json()
 					                	#print("\n".join(list(response["result"].values())))
-					        	try:
+					       	try:
 						          	bot.sendMessage(msg["author_object_guid"], "\n".join(list(response["result"].values())[:20])).text
-							        bot.sendMessage(target, "نتیجه بزودی برای شما ارسال خواهد شد...", message_id=msg["message_id"])
+							         bot.sendMessage(target, "نتیجه بزودی برای شما ارسال خواهد شد...", message_id=msg["message_id"])
 						        except:
 							        bot.sendMessage(target, "متاسفانه نتیجه‌ای موجود نبود!", message_id=msg["message_id"])
 								
