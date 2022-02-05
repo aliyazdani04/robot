@@ -375,7 +375,7 @@ while True:
 							except:
 								bot.sendMessage(target, "مشکلی پیش اومد!", message_id=msg["message_id"])
 								
-						elif msg.get("text").startswith("بورس") or msg.get("text").startswith("!dastan"):
+						elif msg.get("text").startswith("بورس"):
 							try:
 								response = get("https://api.codebazan.ir/bours/").text
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
@@ -383,11 +383,11 @@ while True:
 								bot.sendMessage(target, "مشکلی پیش اومد!", message_id=msg["message_id"])		
 						
 						elif msg.get("text").startswith("غزل"):
-						        try:
-						         	response = get("https://api.codebazan.ir/ghazalsaadi/").text
-							        bot.sendMessage(target, response,message_id=msg.get("message_id"))
-						        except:
-							        bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
+							try:
+								response = get("https://api.codebazan.ir/ghazalsaadi/").text
+								bot.sendMessage(target, response,message_id=msg.get("message_id"))
+							except:
+								bot.sendMessage(target, "مشکلی پیش اومد!", message_id=msg["message_id"])
 							
 						elif msg.get("text").startswith("!ping"):
 							try:
