@@ -334,11 +334,11 @@ while True:
 								
 						elif msg.get("text").startswith("فال"):
 						
-					                	try:
-						                	responser = get(f"https://api.codebazan.ir//ghazaliyathafez/?type=ghazal&num={msg.get('text').split()[1]}").text
-						                	bot.sendMessage(target, responser,message_id=msg["message_id"])
-					                	except:
-						                 	bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])		
+					               	try:
+						               	responser = get(f"https://api.codebazan.ir//ghazaliyathafez/?type=ghazal&num={msg.get('text').split()[1]}").text
+						              	bot.sendMessage(target, responser,message_id=msg["message_id"])
+					               	except:
+						               	bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])		
 								
 						elif msg.get("text").startswith("همسر"):
 						
