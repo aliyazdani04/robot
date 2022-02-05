@@ -273,7 +273,7 @@ while True:
 							except:
 								print("err poker answer")
 						
-						elif msg.get("text") == "استغفرالله":
+					elif msg.get("text") == "استغفرالله":
 						bot.sendMessage(target, "توبه توبه", message_id=msg.get("message_id"))
 						
 					elif msg.get("text") == "سبحان الله":
