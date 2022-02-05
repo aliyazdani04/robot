@@ -349,11 +349,11 @@ while True:
 								bot.sendMessage(target, "متاسفانه تو ارسال مشکلی پیش اومد!", message_id=msg["message_id"])
 						
 						elif msg.get("text").startswith("اوقات"):
-				        		try:
-			         				responser = get(f"https://api.codebazan.ir/owghat/?city={msg.get('text').split()[1]}").text
-					        		bot.sendMessage(target, responser,message_id=msg["message_id"])
-			         			except:
-					         	       	bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
+							try:
+								responser = get(f"https://api.codebazan.ir/owghat/?city={msg.get('text').split()[1]}").text
+								bot.sendMessage(target, response,message_id=msg.get("message_id"))
+							except:
+								bot.sendMessage(target, "ببخشید، خطایی تو ارسال پیش اومد!", message_id=msg["message_id"])
 							
 						elif msg.get("text").startswith("دانستنی"):
 							try:
