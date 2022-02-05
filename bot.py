@@ -547,8 +547,6 @@ while True:
 					                user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
 					                bot.sendMessage(target, f"هــای {user} عزیز 😘🌹 \n • به گـروه {name} خیـلی خوش اومدی 😍❤️ \nلطفا قوانین رو رعایت کن .\n 💎 برای مشاهده قوانین کافیه کلمه (قوانین) رو ارسال کنی!\nدوست داری ربات بسازی؟ بیا اینجا😍👇\n@RobotHL", message_id=msg["message_id"])
 
-			answered.append(msg.get("message_id"))
-							
 				else:
 					if "forwarded_from" in msg.keys() and bot.getMessagesInfo(target, [msg.get("message_id")])[0]["forwarded_from"]["type_from"] == "Channel" and not msg.get("author_object_guid") in admins :
 						bot.deleteMessages(target, [msg.get("message_id")])
