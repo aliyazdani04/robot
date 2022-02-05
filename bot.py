@@ -515,12 +515,8 @@ while True:
 							print("err rm member answer")
 					
 					elif data["type"]=="AddedGroupMembers":
-						try:
-							user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"هــای {user} عزیز 😘🌹 \n • به گـروه {name} خیـلی خوش اومدی 😍❤️ \nلطفا قوانین رو رعایت کن .\n 💎 برای مشاهده قوانین کافیه کلمه (قوانین) رو ارسال کنی!\nدوست داری ربات بسازی؟ بیا اینجا😍👇\n@RobotHL", message_id=msg["message_id"])
-							# bot.deleteMessages(target, [msg["message_id"]])
-						except:
-							print("err add member answer")
+					                user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
+					                bot.sendMessage(target, f"هــای {user} عزیز 😘🌹 \n • به گـروه {name} خیـلی خوش اومدی 😍❤️ \nلطفا قوانین رو رعایت کن .\n 💎 برای مشاهده قوانین کافیه کلمه (قوانین) رو ارسال کنی!\nدوست داری ربات بسازی؟ بیا اینجا😍👇\n@RobotHL", message_id=msg["message_id"])
 					
 					elif data["type"]=="LeaveGroup":
 						try:
@@ -548,12 +544,10 @@ while True:
 							bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])		
 							
 					elif data["type"]=="JoinedGroupByLink":
-						try:
-							user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"هــای {user} عزیز 😘🌹 \n • به گـروه {name} خیـلی خوش اومدی 😍❤️ \nلطفا قوانین رو رعایت کن .\n 💎 برای مشاهده قوانین کافیه کلمه (قوانین) رو ارسال کنی!\nدوست داری ربات بسازی؟ بیا اینجا😍👇\n@RobotHL", message_id=msg["message_id"])
-							# bot.deleteMessages(target, [msg["message_id"]])
-						except:
-							print("err Joined member Answer")
+					                user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
+					                bot.sendMessage(target, f"هــای {user} عزیز 😘🌹 \n • به گـروه {name} خیـلی خوش اومدی 😍❤️ \nلطفا قوانین رو رعایت کن .\n 💎 برای مشاهده قوانین کافیه کلمه (قوانین) رو ارسال کنی!\nدوست داری ربات بسازی؟ بیا اینجا😍👇\n@RobotHL", message_id=msg["message_id"])
+
+			answered.append(msg.get("message_id"))
 							
 				else:
 					if "forwarded_from" in msg.keys() and bot.getMessagesInfo(target, [msg.get("message_id")])[0]["forwarded_from"]["type_from"] == "Channel" and not msg.get("author_object_guid") in admins :
