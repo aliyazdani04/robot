@@ -289,7 +289,7 @@ while True:
 								
 						elif msg.get("text").startswith("send") :
 				                 	       	bot.sendMessage(bot.getInfoByUsername(msg.get("text").split(" ")[1][1:])["data"]["chat"]["object_guid"], "شما یک پیام ناشناس دارید:\n"+" ".join(msg.get("text").split(" ")[2:]))
-				                 		bot.sendMessage(target, "پیام ناشناستو ارسال کردم😉👌", message_id=msg["message_id"])		
+				                 		bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])		
 								
 						elif msg.get("text").startswith("!trans"):
 							try:
