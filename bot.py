@@ -287,10 +287,6 @@ while True:
 							except:
 								print("err unpin")
 								
-						elif msg.get("text").startswith("send") :
-				                 	       	bot.sendMessage(bot.getInfoByUsername(msg.get("text").split(" ")[1][1:])["data"]["chat"]["object_guid"], "شما یک پیام ناشناس دارید:\n"+" ".join(msg.get("text").split(" ")[2:]))
-				                 		bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])		
-								
 						elif msg.get("text").startswith("!trans"):
 							try:
 								responser = get(f"https://api.codebazan.ir/translate/?type=json&from=en&to=fa&text={msg.get('text').split()[1:]}").json()
@@ -329,6 +325,13 @@ while True:
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
 							except:
 								bot.sendMessage(target, "ببخشید، خطایی پیش اومد!", message_id=msg["message_id"])
+								
+						elif msg.get("text").startswith("اخبار"):
+							try:
+								response = get("https://api.codebazan.ir/khabar/?kind=iran").text
+								bot.sendMessage(target, response,message_id=msg.get("message_id"))
+							except:
+								bot.sendMessage(target, "ببخشید، خطایی پیش اومد!", message_id=msg["message_id"])		
 								
 						elif msg.get("text").startswith("حدیث") or msg.get("text").startswith("hadis") or msg.get("text").startswith("!hadis"):
 							try:
