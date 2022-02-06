@@ -353,21 +353,35 @@ while True:
 								responser = get(f"https://api.codebazan.ir/owghat/?city={msg.get('text').split()[1]}").text
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
 							except:
-								bot.sendMessage(target, "ببخشید، خطایی تو ارسال پیش اومد!", message_id=msg["message_id"])
+								bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
+						
+						elif msg.get("text").startswith("معنی"):
+							try:
+								responser = get(f"https://api.codebazan.ir/vajehyab/?text={msg.get('text').split()[1]}").text
+								bot.sendMessage(target, response,message_id=msg.get("message_id"))
+							except:
+								bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
+								
+						elif msg.get("text").startswith("ارز"):
+							try:
+								responser = get(f"http://api.codebazan.ir/arz/?type={msg.get('text').split()[1]}").text
+								bot.sendMessage(target, response,message_id=msg.get("message_id"))
+							except:
+								bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])		
 								
 						elif msg.get("text").startswith("خواب"):
 							try:
 								responser = get(f"https://api.codebazan.ir/tabir/?text={msg.get('text').split()[1]}").text
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))
 							except:
-								bot.sendMessage(target, "ببخشید، خطایی تو ارسال پیش اومد!", message_id=msg["message_id"])		
+								bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])		
 								
 						elif msg.get("text").startswith("فال"):
 							try:
 								responser = get(f"https://api.codebazan.ir//ghazaliyathafez/?type=ghazal&num={msg.get('text').split()[1]}").text
 								bot.sendMessage(target, response,message_id=msg.get("message_id"))	
 							except:
-								bot.sendMessage(target, "ببخشید، خطایی تو ارسال پیش اومد!", message_id=msg["message_id"])	
+								bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])	
 								
 						elif msg.get("text").startswith("همسر"):
 							try:
