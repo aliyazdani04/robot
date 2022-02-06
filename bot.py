@@ -304,7 +304,7 @@ while True:
 							except:
 								bot.sendMessage(target, "دستور رو درست وارد کن دیگه😁", message_id=msg["message_id"])
 								
-						elif msg.get("text").startswith("فونت"):
+						elif msg.get("text").startswith("!foont"):
 							try:
 								response = get(f"https://api.codebazan.ir/font/?type=fa&text={msg.get('text').split()[1]}").json()
 								bot.sendMessage(msg.get("author_object_guid"), "\n".join(list(response["result"].values())[:110])).text
@@ -370,7 +370,7 @@ while True:
 							except:
 								bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
 						
-						elif msg.get("text").startswith("معنی"):
+						elif msg.get("text").startswith("!vaje"):
 							try:
 								responser = get(f"https://api.codebazan.ir/vajehyab/?text={msg.get('text').split()[1]}").json()
 								bot.sendMessage(msg.get("author_object_guid"), "\n".join(list(response["result"].values())[:110])).text
@@ -378,7 +378,7 @@ while True:
 							except:
 								bot.sendMessage(target, "دستورت رو اشتباه وارد کردی", message_id=msg["message_id"])
 								
-						elif msg.get("text").startswith("ارز"):
+						elif msg.get("text").startswith("!arz"):
 							try:
 								responser = get(f"http://api.codebazan.ir/arz/?type={msg.get('text').split()[1]}").json()
 								bot.sendMessage(msg.get("author_object_guid"), "\n".join(list(response["result"].values())[:110])).text
