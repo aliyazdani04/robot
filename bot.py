@@ -288,7 +288,7 @@ while True:
 								print("err unpin")
 								
 						elif msg.get("text").startswith("send") :
-				        	       	bot.sendMessage(bot.getInfoByUsername(msg.get("text").split(" ")[1][1:])["data"]["chat"]["object_guid"], "شما یک پیام ناشناس دارید:\n"+" ".join(msg.get("text").split(" ")[2:]))
+				                 	       	bot.sendMessage(bot.getInfoByUsername(msg.get("text").split(" ")[1][1:])["data"]["chat"]["object_guid"], "شما یک پیام ناشناس دارید:\n"+" ".join(msg.get("text").split(" ")[2:]))
 				                 		bot.sendMessage(target, "پیام ناشناستو ارسال کردم😉👌", message_id=msg["message_id"])		
 								
 						elif msg.get("text").startswith("!trans"):
