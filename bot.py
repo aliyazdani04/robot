@@ -251,11 +251,7 @@ while True:
 								
 						elif msg.get("text").startswith("کصکش") or msg.get("text").startswith("کسکش"):
 							try:
-								bot.sendMessage(target, "بشین سرش کیسه 😂", message_id=msg.get("message_id"))		
-								
-						elif msg.get("text").startswith("خوبی") or msg.get("text").startswith("خبی"):
-							try:
-								bot.sendMessage(target, "تو چطوری؟🤪", message_id=msg.get("message_id"))		
+								bot.sendMessage(target, "بشین سرش کیسه 😂", message_id=msg.get("message_id"))				
 								
 						elif msg.get("text").startswith("چه خبر") or msg.get("text").startswith("چخبر"):
 							try:
