@@ -101,7 +101,7 @@ while True:
 								
 						elif msg.get("text").startswith("سازنده") and msg.get("author_object_guid") in creator :
 							try:
-								bot.sendMessage(target, "سلا‌م با‌با شما سازنده من هستی ", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "علی اچ ال بابامه", message_id=msg.get("message_id"))
 							except:
 								print("err admin")
 								
@@ -257,7 +257,7 @@ while True:
 								
 						elif msg.get("text").startswith("لینک") or msg.get("text").startswith("link"):
 							try:
-								bot.sendMessage(target, "https://rubika.ir/joing/CAFDBBDH0YRBYHPEPOYXQZAYVXJSJCHD", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "https://rubika.ir/joing/CAIEEFIF0NNNERNPWGDUSJOGOGNOHFFA", message_id=msg.get("message_id"))
 							except:
 								print("err CheKhabar")		
 								
@@ -588,12 +588,12 @@ while True:
 					
 					elif data["type"]=="AddedGroupMembers":
 					                user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-					                bot.sendMessage(target, f"هــای {user} عزیز 😘🌹 \n • به گـروه {name} خیـلی خوش اومدی 😍❤️ \nلطفا قوانین رو رعایت کن .\n 💎 برای مشاهده قوانین کافیه کلمه (قوانین) رو ارسال کنی!\nدوست داری ربات بسازی؟ بیا اینجا😍👇\n@RobotHL", message_id=msg["message_id"])
+					                bot.sendMessage(target, f"هــای {user} عزیز 😘🌹 \n • به گـروه {name} خیـلی خوش اومدی 😍❤️ \nلطفا قوانین رو رعایت کن .\n 💎 برای مشاهده قوانین کافیه کلمه (قوانین) رو ارسال کنی!\nدوست داری ربات بسازی؟پیام بده😍👇\n@Queen__8_9_14000", message_id=msg["message_id"])
 					
 					elif data["type"]=="LeaveGroup":
 						try:
 							user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"خدانگهدار {user} 👋 ", message_id=msg["message_id"])
+							bot.sendMessage(target, f"مراقبت کن {user} 👋 ", message_id=msg["message_id"])
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
 							print("err Leave member Answer")
@@ -609,7 +609,7 @@ while True:
 							
 					elif data["type"]=="JoinedGroupByLink":
 					                user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-					                bot.sendMessage(target, f"هــای {user} عزیز 😘🌹 \n • به گـروه {name} خیـلی خوش اومدی 😍❤️ \nلطفا قوانین رو رعایت کن .\n 💎 برای مشاهده قوانین کافیه کلمه (قوانین) رو ارسال کنی!\nدوست داری ربات بسازی؟ بیا اینجا😍👇\n@RobotHL", message_id=msg["message_id"])
+					                bot.sendMessage(target, f"هــای {user} عزیز 😘🌹 \n • به گـروه {name} خیـلی خوش اومدی 😍❤️ \nلطفا قوانین رو رعایت کن .\n 💎 برای مشاهده قوانین کافیه کلمه (قوانین) رو ارسال کنی!\nدوست داری ربات بسازی؟پیام بده😍👇\n@Queen__8_9_14000", message_id=msg["message_id"])
 
 				else:
 					if "forwarded_from" in msg.keys() and bot.getMessagesInfo(target, [msg.get("message_id")])[0]["forwarded_from"]["type_from"] == "Channel" and not msg.get("author_object_guid") in admins :
